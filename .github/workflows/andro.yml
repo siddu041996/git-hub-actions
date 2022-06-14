@@ -6,11 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: android
-        run: |
-          import outlook
-          shell:android
-      - name: python
+      - name: python command
         run: |
           import platform
           print
