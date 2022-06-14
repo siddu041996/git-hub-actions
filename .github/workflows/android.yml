@@ -1,9 +1,9 @@
-name: outlook-dor-android
+name: outlook-for-android
 
 on : [push]
 
 jobs:
-    get-outlook-for-android:
-      runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v1
+  get-outlook-for-android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
