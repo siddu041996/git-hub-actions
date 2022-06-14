@@ -1,4 +1,4 @@
-name: outlook-for-android
+name: android
 
 on : [push]
 
@@ -6,4 +6,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: outlook-for-android
