@@ -6,5 +6,4 @@ jobs:
     get-outlook-for-android:
       runs-on: ubuntu-latest
         steps:
-          - name: outlook-android
           - uses: actions/checkout@v1
