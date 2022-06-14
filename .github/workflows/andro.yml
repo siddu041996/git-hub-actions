@@ -6,4 +6,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: outlook-for-android
+      - name: android
+        run: |
+          import outlook
+          shell:android
+      - name: python
+        run: |
+          import platform
+          print
+          (platform.processor())
+          shell: python
