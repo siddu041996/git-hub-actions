@@ -1,12 +1,21 @@
-name: android
+name: action-checkout
 
-on : 
+on : [push]
 
 jobs:
-  build:
+  run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: directory outlook
-        run: pwd
-        shell: android-studio
+      - name: files
+        run: |
+         pwd
+         ls -a 
+      - name: cheackout
+        uses: actions/checkout@master
+      - name: list files again
+        run: |
+          pwd 
+          ls -a
+
+  
         
