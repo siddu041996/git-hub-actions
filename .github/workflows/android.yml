@@ -1,6 +1,6 @@
 name: android
 
-on : [push]
+on : 
 
 jobs:
   build:

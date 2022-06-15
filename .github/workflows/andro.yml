@@ -12,3 +12,11 @@ jobs:
           print
           (platform.processor())
           shell: python
+  run-windows-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: directory powershell
+        run: Get-Location
+      - name: Dirctory Bash
+        run: pwd
+        shell: bash        
