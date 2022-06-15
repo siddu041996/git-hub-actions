@@ -13,8 +13,8 @@ jobs:
          echo $GITHUB_SHA
          echo $GITHUB_REPOSITORY
          echo $GITHUB_WORKSPACE
-         echo "${{ggithub.token}}" 
-         
+         echo "${{github.token}}" 
+
       - name: cheackout
         uses: actions/checkout@master
       - name: list files again
