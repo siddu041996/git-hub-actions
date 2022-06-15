@@ -1,6 +1,6 @@
 name: action-checkout
 
-on : [push]
+on : [pull_request_review]
 
 jobs:
   run-github-actions:
