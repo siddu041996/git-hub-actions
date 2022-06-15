@@ -3,20 +3,11 @@ name: android
 on : [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: python command
-        run: |
-          import platform
-          print
-          (platform.processor())
-          shell: python
-  run-windows-commands:
+  run_window_command:
     runs-on: ubuntu-latest
     steps:
       - name: directory powershell
-        run: Get-Location
+        run: pwd
       - name: Dirctory Bash
         run: pwd
         shell: bash        
