@@ -1,13 +1,12 @@
-name: android
+name: shell-commands
 
-on : [pull_request_review]
+on: [push]
 
 jobs:
-  run_window_command:
+  run-linux-command:
     runs-on: ubuntu-latest
     steps:
-      - name: directory powershell
-        run: pwd
-      - name: Dirctory Bash
-        run: pwd
-        shell: bash        
+      - name: install-outlook 
+        run: |
+          sodo snap install prospect-mail
+       
