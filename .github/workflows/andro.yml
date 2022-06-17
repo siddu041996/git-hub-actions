@@ -1,4 +1,4 @@
-name: shell-commands
+name: linux-commands
 
 on: [push]
 
@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: install-outlook 
         run: |
-          sodo snap install prospect-mail
+          sudo snap install prospect-mail
        
