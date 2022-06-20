@@ -1,14 +1,9 @@
-name: artifacts
 
-on: [push]
+name: CI
+on: push
 jobs:
-  example:
+  prod-check:
+    if: ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
-    name: Save output
     steps:
-      
-      - name: Upload output file
-        uses: actions/upload-artifact@v3
-    
-      - name: steps_succed
-        if: ${{ failure()}}
+      - run: echo "Deploying to production server on branch $GITHUB_REF"
