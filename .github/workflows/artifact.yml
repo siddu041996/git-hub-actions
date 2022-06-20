@@ -14,3 +14,5 @@ jobs:
         with:
           name: output-log-file
           path: output.log
+      - name: steps_succed
+        if: ${{ success()}}
