@@ -1,6 +1,6 @@
 name: artifacts
 
-on: [pull_request]
+on: [push]
 jobs:
   example:
     runs-on: ubuntu-latest
@@ -15,4 +15,4 @@ jobs:
           name: output-log-file
           path: output.log
       - name: steps_succed
-        if: ${{ success()}}
+        if: ${{ cancelled()}}
